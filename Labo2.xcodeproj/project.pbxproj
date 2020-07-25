@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC3D8C6A24C6195D00ACF133 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3D8C6924C6195C00ACF133 /* Article.swift */; };
+		FC3D8C6C24C61F0900ACF133 /* ArticleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3D8C6B24C61F0800ACF133 /* ArticleProtocol.swift */; };
 		FC5F5C3C24BA267500EE66C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5C3B24BA267500EE66C1 /* AppDelegate.swift */; };
 		FC5F5C3E24BA267500EE66C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5C3D24BA267500EE66C1 /* SceneDelegate.swift */; };
 		FC5F5C4024BA267500EE66C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5C3F24BA267500EE66C1 /* ViewController.swift */; };
@@ -15,6 +17,9 @@
 		FC5F5C4824BA267800EE66C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5F5C4624BA267800EE66C1 /* LaunchScreen.storyboard */; };
 		FC5F5C5324BA267800EE66C1 /* Labo2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5C5224BA267800EE66C1 /* Labo2Tests.swift */; };
 		FC5F5C5E24BA267800EE66C1 /* Labo2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5C5D24BA267800EE66C1 /* Labo2UITests.swift */; };
+		FCC616F424C78E3100C421C6 /* ArticleFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC616F324C78E3100C421C6 /* ArticleFormViewController.swift */; };
+		FCC616F724C955A200C421C6 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC616F624C955A200C421C6 /* ArticleCell.swift */; };
+		FCC616FA24CA09CA00C421C6 /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC616F924CA09CA00C421C6 /* ImageSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC3D8C6924C6195C00ACF133 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		FC3D8C6B24C61F0800ACF133 /* ArticleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleProtocol.swift; sourceTree = "<group>"; };
 		FC5F5C3824BA267500EE66C1 /* Labo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5F5C3B24BA267500EE66C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC5F5C3D24BA267500EE66C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		FC5F5C5924BA267800EE66C1 /* Labo2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Labo2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5F5C5D24BA267800EE66C1 /* Labo2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labo2UITests.swift; sourceTree = "<group>"; };
 		FC5F5C5F24BA267800EE66C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC616F324C78E3100C421C6 /* ArticleFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleFormViewController.swift; sourceTree = "<group>"; };
+		FCC616F624C955A200C421C6 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		FCC616F924CA09CA00C421C6 /* ImageSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC3D8C6524C6185400ACF133 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F5C3F24BA267500EE66C1 /* ViewController.swift */,
+				FCC616F324C78E3100C421C6 /* ArticleFormViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FC3D8C6624C6186600ACF133 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCC616F524C9555F00C421C6 /* CustomCells */,
+				FC5F5C4124BA267500EE66C1 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC3D8C6724C6187900ACF133 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCC616F824CA09A100C421C6 /* Enums */,
+				FC3D8C6824C6191700ACF133 /* Protocols */,
+				FC3D8C6924C6195C00ACF133 /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC3D8C6824C6191700ACF133 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC3D8C6B24C61F0800ACF133 /* ArticleProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		FC5F5C2F24BA267500EE66C1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +145,11 @@
 		FC5F5C3A24BA267500EE66C1 /* Labo2 */ = {
 			isa = PBXGroup;
 			children = (
+				FC3D8C6724C6187900ACF133 /* Model */,
+				FC3D8C6624C6186600ACF133 /* Views */,
+				FC3D8C6524C6185400ACF133 /* ViewControllers */,
 				FC5F5C3B24BA267500EE66C1 /* AppDelegate.swift */,
 				FC5F5C3D24BA267500EE66C1 /* SceneDelegate.swift */,
-				FC5F5C3F24BA267500EE66C1 /* ViewController.swift */,
-				FC5F5C4124BA267500EE66C1 /* Main.storyboard */,
 				FC5F5C4424BA267800EE66C1 /* Assets.xcassets */,
 				FC5F5C4624BA267800EE66C1 /* LaunchScreen.storyboard */,
 				FC5F5C4924BA267800EE66C1 /* Info.plist */,
@@ -128,6 +175,22 @@
 			path = Labo2UITests;
 			sourceTree = "<group>";
 		};
+		FCC616F524C9555F00C421C6 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				FCC616F624C955A200C421C6 /* ArticleCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		FCC616F824CA09A100C421C6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FCC616F924CA09CA00C421C6 /* ImageSource.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +207,8 @@
 			dependencies = (
 			);
 			name = Labo2;
+			packageProductDependencies = (
+			);
 			productName = Labo2;
 			productReference = FC5F5C3824BA267500EE66C1 /* Labo2.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +281,8 @@
 				Base,
 			);
 			mainGroup = FC5F5C2F24BA267500EE66C1;
+			packageReferences = (
+			);
 			productRefGroup = FC5F5C3924BA267500EE66C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +326,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC616FA24CA09CA00C421C6 /* ImageSource.swift in Sources */,
+				FC3D8C6C24C61F0900ACF133 /* ArticleProtocol.swift in Sources */,
+				FCC616F424C78E3100C421C6 /* ArticleFormViewController.swift in Sources */,
+				FC3D8C6A24C6195D00ACF133 /* Article.swift in Sources */,
 				FC5F5C4024BA267500EE66C1 /* ViewController.swift in Sources */,
+				FCC616F724C955A200C421C6 /* ArticleCell.swift in Sources */,
 				FC5F5C3C24BA267500EE66C1 /* AppDelegate.swift in Sources */,
 				FC5F5C3E24BA267500EE66C1 /* SceneDelegate.swift in Sources */,
 			);
